@@ -42,4 +42,6 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: java-cicd/app:latest
+        registry: docker.io
+        image: tkb2153/java-cicd
+        tags: app:latest
